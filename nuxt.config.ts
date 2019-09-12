@@ -18,6 +18,11 @@ const config: Configuration = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  router: {
+    linkActiveClass: 'link--active',
+    linkExactActiveClass: 'link--exact-active',
+    linkPrefetchedClass: 'link--prefetch'
+  },
   /*
    ** Customize the progress-bar color
    */
@@ -26,7 +31,7 @@ const config: Configuration = {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/global.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -46,8 +51,8 @@ const config: Configuration = {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/axios'
+    // '@nuxtjs/pwa'
   ],
   /*
    ** Axios module configuration
@@ -58,9 +63,7 @@ const config: Configuration = {
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
+    devtools: true
   }
 }
 

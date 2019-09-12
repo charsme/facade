@@ -1,3 +1,11 @@
 {
-  "vetur.format.defaultFormatter.ts": "prettier"
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.validation.style": false,
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "tailwindCSS.emmetCompletions": true,
+  "stylelint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "tslint.autoFixOnSave": true,
 }

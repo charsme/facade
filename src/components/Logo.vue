@@ -6,9 +6,6 @@
     <div class="Triangle Triangle--four" />
   </div>
 </template>
-<script>
-export default {}
-</script>
 
 <style>
 .VueToNuxtLogo {

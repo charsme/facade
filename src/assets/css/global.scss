@@ -1,0 +1,50 @@
+@tailwind base;
+/* components */
+@tailwind components;
+/* utilities */
+@tailwind utilities;
+
+html {
+  @apply overflow-x-hidden overflow-y-scroll;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: theme('colors.black');
+}
+body {
+  @apply bg-white overflow-x-hidden font-sans font-normal text-black text-base leading-relaxed tracking-normal not-italic;
+  font-size-adjust: 0.6;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga' on;
+}
+::selection {
+  @apply bg-blue-200;
+  text-shadow: none;
+}
+*,
+*:before,
+*:after {
+  @apply m-0;
+  box-sizing: border-box;
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
