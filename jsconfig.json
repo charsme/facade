@@ -9,7 +9,9 @@
     }
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./node_modules/cypress",
+    "cypress/**/*"
   ],
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

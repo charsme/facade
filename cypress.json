@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "reporter": "nyan",
+  "fileServerFolder": "dist/",
+  "fixturesFolder": "test/fixtures",
+  "integrationFolder": "test/integration",
+  "pluginsFile": "test/plugins/index.js",
+  "supportFile": "test/support/index.js",
+  "screenshotsFolder": "storage/screenshots",
+  "videosFolder": "storage/videos"
+}
