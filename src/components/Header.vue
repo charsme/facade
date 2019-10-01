@@ -34,9 +34,9 @@ export default {
 
 <style lang="scss">
 .header {
-  @apply w-full fixed bg-transparent left-0 top-0 z-10 pt-8 pb-8;
+  @apply w-full fixed bg-transparent left-0 top-0 z-10 py-4;
   &__container {
-    @apply px-16 max-w-inherit flex mx-auto w-full justify-between items-center h-8;
+    @apply px-16 max-w-inherit flex mx-auto w-full justify-center items-center h-8;
   }
 }
 .branding {
@@ -48,7 +48,10 @@ export default {
 .nav {
   @apply flex items-center justify-center font-serif;
   a {
-    @apply px-4 capitalize;
+    @apply px-4 lowercase;
+    &:hover {
+      @apply underline;
+    }
   }
 }
 </style>

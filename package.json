@@ -15,7 +15,10 @@
     "cy:run": "cypress run --browser chrome"
   },
   "lint-staged": {
-    "*.{ts,js,vue}": "eslint --fix"
+    "*.{ts,js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
